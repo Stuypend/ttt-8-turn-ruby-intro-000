@@ -6,7 +6,7 @@ require_relative '../lib/display_board'
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 def turn(board)
-  index = 0
+  index = -2
   until valid_move?(board, index)
     puts "Please enter 1-9:"
     input = gets.strip
